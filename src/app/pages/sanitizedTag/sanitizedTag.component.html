@@ -1,0 +1,17 @@
+<h1>Simple Tag</h1>
+<div>
+  <h2>Description</h2>
+  <div>
+    This page puts sanitized value of the query parameter ("xss") into a div tag.
+    This is done with setting innerHTML ([innerHTML]="xss"). It gets sanitized by angular.
+    <div class="vulnerability-info-container">
+      <label>Has XSS vulnerability:</label>
+      <div>No</div>
+    </div>
+  </div>
+</div>
+
+<div class="value-container">
+  <label>Value:</label>
+  <div [innerHTML]="xss"></div>
+</div>

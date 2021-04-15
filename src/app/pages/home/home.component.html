@@ -1,0 +1,53 @@
+<h1>Angular XSS Test Site</h1>
+
+<div>
+  <h2>Description</h2>
+  <div>
+    This website is build with Angular and contains different types of common XSS vulnerabilities.
+    The purpose is to use this site to test xss detection suites, to compare them.
+    Not all pages have vulnerabilities, to test sensitivity and specificity.
+  </div>
+</div>
+
+<div class="pages-list-container">
+  <h3>Pages</h3>
+
+  <div class="pages-list-group">
+    <label>Simple</label>
+    <div>
+      <a href="/simpleTag?xss=234">Tag</a>
+    </div>
+    <div>
+      <a href="/simpleValue?xss=234">Value</a>
+    </div>
+    <div>
+      <a href="/simpleComment?xss=234">Comment</a>
+    </div>
+  </div>
+
+  <div class="pages-list-group">
+    <label>Sanitizing</label>
+    <div>
+      <a href="/sanitizedTag?xss=234">Tag</a>
+    </div>
+    <div>
+      <a href="/sanitizedValue?xss=234">Value</a>
+    </div>
+    <div>
+      <a href="/sanitizedHref?xss=234">Href</a>
+    </div>
+  </div>
+
+  <div class="pages-list-group">
+    <label>Escaping</label>
+    <div>
+      <a href="/escapingTag?xss=234">Tag</a>
+    </div>
+    <div>
+      <a href="/escapingValue?xss=234">Value</a>
+    </div>
+    <div>
+      <a href="/escapingOnLoad?xss=234">Event Handler</a>
+    </div>
+  </div>
+</div>

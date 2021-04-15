@@ -1,0 +1,21 @@
+<h1>Simple Tag</h1>
+<div>
+  <h2>Description</h2>
+  <div>
+    This page uses the escaped value of the query parameter ("xss") in the onload event handler of
+    an img tag. This is done with setting innerHTML ([innerHTML]="xss") and actively disabled sanitizing.
+    This is not considered best practice. To escape the value the npm package 'escape-html' is used.
+    <div class="vulnerability-info-container">
+      <label>Has XSS vulnerability:</label>
+      <div>Yes</div>
+      <button (click)="loadExample()">
+        Example
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="value-container">
+  <label>Value:</label>
+  <div [innerHTML]="xss"></div>
+</div>

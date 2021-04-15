@@ -1,0 +1,21 @@
+<h1>Simple Tag</h1>
+<div>
+  <h2>Description</h2>
+  <div>
+    This page puts the value of the query parameter ("xss") into a HTML comment.
+    This is done with setting innerHTML ([innerHTML]="xss") and actively disabled sanitizing.
+    This is not considered best practice.
+    <div class="vulnerability-info-container">
+      <label>Has XSS vulnerability:</label>
+      <div>Yes</div>
+      <button (click)="loadExample()">
+        Example
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="value-container">
+  <label>Value:</label>
+  <div [innerHTML]="xss"></div>
+</div>
