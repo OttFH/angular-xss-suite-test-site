@@ -15,7 +15,7 @@ const routes: Routes = [
   {path: 'escapingOnLoad', component: EscapingOnLoadComponent},
   {path: 'escapingTag', component: EscapingTagComponent},
   {path: 'escapingValue', component: EscapingValueComponent},
-  {path: 'sanitizedOnLoad', component: SanitizedHrefComponent},
+  {path: 'sanitizedHref', component: SanitizedHrefComponent},
   {path: 'sanitizedTag', component: SanitizedTagComponent},
   {path: 'sanitizedValue', component: SanitizedValueComponent},
   {path: 'simpleComment', component: SimpleCommentComponent},
