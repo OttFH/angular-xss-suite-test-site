@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-sanitized-on-load-page',
+  selector: 'app-sanitized-href-page',
   templateUrl: './sanitizedHref.component.html',
   styleUrls: ['./sanitizedHref.component.css']
 })
