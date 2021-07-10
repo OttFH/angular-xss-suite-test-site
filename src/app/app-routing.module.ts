@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from './pages/home/home.component';
-import {EscapingOnLoadComponent} from './pages/escapingOnLoad/escapingOnLoad.component';
+import {EscapingOnloadComponent} from './pages/escapingOnload/escapingOnload.component';
 import {EscapingTagComponent} from './pages/escapingTag/escapingTag.component';
 import {EscapingValueComponent} from './pages/escapingValue/escapingValue.component';
 import {SanitizedHrefComponent} from './pages/sanitizedHref/sanitizedHref.component';
@@ -12,7 +12,7 @@ import {SimpleTagComponent} from './pages/simpleTag/simpleTag.component';
 import {SimpleValueComponent} from './pages/simpleValue/simpleValue.component';
 
 const routes: Routes = [
-  {path: 'escapingOnLoad', component: EscapingOnLoadComponent},
+  {path: 'escapingOnload', component: EscapingOnloadComponent},
   {path: 'escapingTag', component: EscapingTagComponent},
   {path: 'escapingValue', component: EscapingValueComponent},
   {path: 'sanitizedHref', component: SanitizedHrefComponent},

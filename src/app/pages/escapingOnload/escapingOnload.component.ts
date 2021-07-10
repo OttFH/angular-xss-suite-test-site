@@ -4,10 +4,10 @@ import escape from 'escape-html';
 
 @Component({
   selector: 'app-escaping-on-load-page',
-  templateUrl: './escapingOnLoad.component.html',
-  styleUrls: ['./escapingOnLoad.component.css'],
+  templateUrl: './escapingOnload.component.html',
+  styleUrls: ['./escapingOnload.component.css'],
 })
-export class EscapingOnLoadComponent implements OnInit {
+export class EscapingOnloadComponent implements OnInit {
   title = 'angular-xss-suite-test-site';
   xss = '';
 
@@ -21,6 +21,6 @@ export class EscapingOnLoadComponent implements OnInit {
 
   loadExample(): void {
     // @ts-ignore
-    window.location = '/escapingOnLoad?xss=alert(1)';
+    window.location = '/escapingOnload?xss=alert(1)';
   }
 }
